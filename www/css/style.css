@@ -1451,12 +1451,12 @@ li .slider {
     font-size: 20px;
     padding-bottom: 20px; }
   .slide__list-item {
-    font-size: 16px;
-  padding-left: 20px; }
+    font-size: 16px; }
   .slide__list-item::before {
     width: 15px;
     height: 15px;
-    left: -10px; } }
+    top: 10px;
+    left: -20px; } }
 
 @media (min-width: 1200px) {
   .slide__container {
@@ -1747,7 +1747,7 @@ li .slider {
     color: #ffffff; } }
 
 .products {
-  background-image: url("/images/shadowslide.jpg") no-repeat center top; }
+  border-top: 3px solid #f2f2f2; }
 
 .products__list {
   padding: 0;
@@ -1763,13 +1763,27 @@ li .slider {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
-      justify-content: space-around; }
+      justify-content: space-around;
+  position: relative;
+  z-index: 11; }
 
 .products__wrapper {
   background: -webkit-gradient(linear, left top, left bottom, from(white), to(#f1f1f1));
   background: linear-gradient(to bottom, white 0%, #f1f1f1 100%);
-  padding-top: 70px;
-  padding-bottom: 30px; }
+  padding-top: 60px;
+  padding-bottom: 30px;
+  position: relative; }
+  .products__wrapper::before {
+    content: "";
+    position: absolute;
+    background-image: url("https://gedeon-ekb.ru/images/shadowslide.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 100%;
+    height: 50px;
+    z-index: 10;
+    top: 0;
+    left: 0; }
 
 .products__item {
   display: -webkit-box;
@@ -1820,7 +1834,7 @@ li .slider {
 
 .advantages {
   padding-top: 60px;
-  padding-bottom: 60px; }
+  padding-bottom: 30px; }
 
 .advantages__list {
   padding: 0;
@@ -1940,3 +1954,534 @@ li .slider {
       left: 0; }
   .advantages__item-text {
     min-height: auto; } }
+
+.main-slider__container {
+  height: 360px; }
+
+.swiper-button-next,
+.swiper-button-prev {
+  opacity: 0.1; }
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    opacity: 1; }
+
+.msd {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  height: 300px;
+  background-image: url("https://gedeon-ekb.ru/img/bg-msd.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover; }
+
+.msd__container {
+  position: relative; }
+
+.msd__title-left {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background-color: #F50000;
+  color: #ffffff;
+  width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 10px;
+  border-radius: 10px; }
+
+.msd__block-logo {
+  position: absolute;
+  opacity: 0.3;
+  top: -20px;
+  left: -20px; }
+  .msd__block-logo img {
+    width: 100px;
+    height: 100px; }
+
+.msd__title {
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue", "Arial", "sans-serif";
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #F50000;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px; }
+
+.msd__subtitle {
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue", "Arial", "sans-serif";
+  color: #007D72;
+  font-size: 14px;
+  text-align: center;
+  padding-bottom: 20px; }
+
+.msd__list {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.msd__list-item {
+  font-family: "Helvetica Neue", "Arial", "sans-serif";
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  position: relative; }
+  .msd__list-item::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 0;
+    top: 7px;
+    background-image: url("https://gedeon-ekb.ru/img/list-icon.png");
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+@media (min-width: 768px) {
+  .msd__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .msd__block {
+    width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center; }
+    .msd__block:nth-child(2) {
+      width: 60%; }
+  .msd__title {
+    font-size: 30px; }
+  .msd__subtitle {
+    font-size: 20px; }
+  .msd__list-item {
+    font-size: 18px; }
+    .msd__list-item::before {
+      width: 15px;
+      height: 15px; }
+  .msd__title-left {
+    margin-bottom: 40px; }
+  .msd__block-logo {
+    display: block;
+    opacity: 1;
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 193px;
+    -ms-flex-item-align: center;
+        align-self: center; }
+    .msd__block-logo img {
+      width: 193px;
+      height: 193px; } }
+
+@media (min-width: 1200px) {
+  .msd__title {
+    text-align: left;
+    padding-left: 40px; }
+  .msd__subtitle {
+    text-align: left;
+    padding-left: 40px;
+    padding-bottom: 10px; }
+  .msd__list {
+    padding-bottom: 10px; }
+  .msd__list-item {
+    font-size: 20px;
+    padding-left: 30px; }
+    .msd__list-item::before {
+      width: 20px;
+      height: 20px; } }
+
+.slide-pay {
+  padding-top: 40px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(197, 197, 197, 0)), color-stop(48.07%, rgba(233, 233, 233, 0.77)), to(white)) white;
+  background: linear-gradient(rgba(197, 197, 197, 0) 0%, rgba(233, 233, 233, 0.77) 48.07%, white 100%) white; }
+
+.slide-pay__wrap {
+  position: relative;
+  padding-bottom: 40px; }
+
+.slide-pay__title {
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: #5289AD;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 20px; }
+
+.slide-pay__subtitle {
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 28px;
+  line-height: 1.2;
+  text-align: center;
+  padding-bottom: 60px;
+  color: #E1191F;
+  font-weight: 600; }
+
+.slide-pay__logo {
+  width: 340px; }
+  .slide-pay__logo img {
+    width: 100%; }
+
+.slide-pay__img {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  width: 300px;
+  height: 40px;
+  background-image: url("https://gedeon-ekb.ru/assets/img/terminal.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right; }
+
+@media (min-width: 768px) {
+  .slide-pay__title {
+    text-align: left; }
+  .slide-pay__subtitle {
+    text-align: left;
+    font-size: 30px; }
+    .slide-pay__subtitle--dec {
+      display: block; }
+  .slide-pay__logo {
+    width: 400px; }
+  .slide-pay__img {
+    height: 200px;
+    height: 200px;
+    background-size: contain;
+    right: 20px;
+    bottom: -14px; } }
+
+@media (min-width: 1200px) {
+  .slide-pay__wrap {
+    padding-left: 30px;
+    padding-right: 30px; }
+  .slide-pay__img {
+    height: 350px;
+    width: 500px;
+    bottom: -20px; }
+  .slide-pay__logo {
+    width: 435px; } }
+
+.discount {
+  background-image: url("https://gedeon-ekb.ru/assets/img/s2bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 350px;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.discount__wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 350px; }
+
+.discount__img-container {
+  position: absolute;
+  bottom: 90px;
+  right: 0; }
+  .discount__img-container img {
+    width: 134px; }
+
+.discount__title {
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 27px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #7685B5;
+  text-transform: uppercase;
+  padding-bottom: 20px; }
+
+.discount__subtitle {
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 400; }
+
+.discount__subtitle-bottom {
+  padding: 0;
+  margin: 0;
+  margin-top: 140px; }
+
+.discount__link-container {
+  display: none; }
+
+@media (min-width: 768px) {
+  .discount__subtitle-bottom {
+    margin-top: 160px; }
+  .discount__img-container {
+    bottom: auto;
+    top: 0;
+    right: auto;
+    left: 0; }
+    .discount__img-container img {
+      width: 200px; }
+  .discount__desktop-left {
+    width: 70%; }
+  .discount__link-container {
+    display: block; }
+  .discount__desktop-left {
+    width: 45%;
+    margin-left: auto; }
+  .discount__desktop-right {
+    position: relative;
+    width: 55%;
+    padding-top: 220px;
+    background-image: url("https://gedeon-ekb.ru/assets/img/sgirl.png");
+    background-repeat: no-repeat;
+    background-position-x: 220px;
+    background-position-y: 20px;
+    margin-right: auto; } }
+
+@media (min-width: 1200px) {
+  .discount__desktop-left {
+    width: 585px; }
+  .discount__desktop-right {
+    width: 515px; } }
+
+.discount--sale10 {
+  background-image: url("https://gedeon-ekb.ru/assets/img/s4bg.jpg"); }
+  .discount--sale10 .discount__title {
+    color: #E1191F; }
+
+.discount--light {
+  background-image: url("https://gedeon-ekb.ru/assets/img/s3bg.jpg"); }
+
+.slide--bestbuy .slide__promo-deskription {
+  margin-bottom: 10px; }
+
+.slide.slide--oldpeople {
+  padding-top: 30px;
+  height: 350px; }
+  .slide.slide--oldpeople .slide__photo {
+    display: none; }
+
+@media (min-width: 768px) {
+  .slide--bestbuy .slide__part--text {
+    width: 410px; }
+  .slide--bestbuy img.slide__photo {
+    top: 20px; }
+  .slide.slide--oldpeople .slide__photo {
+    display: block; } }
+
+.slide-onetwo {
+  background: url("https://gedeon-ekb.ru/img/4884.jpg");
+  background-repeat: no-repeat;
+  background-position: top center; }
+  .slide-onetwo .slide__promo-deskription {
+    display: none; }
+  .slide-onetwo .slide__promo-subtext {
+    display: none; }
+  .slide-onetwo .slide__part--img {
+    display: none; }
+  .slide-onetwo .slide__btn:hover {
+    color: white; }
+
+@media (min-width: 768px) {
+  .slide-onetwo .slide__promo-deskription {
+    display: block; }
+  .slide-onetwo .slide__promo-subtext {
+    display: block; }
+  .slide-onetwo .slide__part--img {
+    display: block;
+    top: 160px;
+    left: 5px; }
+    .slide-onetwo .slide__part--img img {
+      width: 250px; } }
+
+.adv {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.adv__title {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 26px;
+  line-height: 1.2;
+  padding-bottom: 40px;
+  position: relative;
+  text-transform: uppercase; }
+  .adv__title::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-color: #7f2c84;
+    bottom: 10px;
+    left: 120px; }
+
+.adv__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  padding-bottom: 20px; }
+
+.adv__item-title {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  padding-top: 80px;
+  position: relative;
+  padding-bottom: 20px; }
+
+.adv__item {
+  position: relative;
+  text-align: center; }
+  .adv__item::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 10px;
+    left: 140px; }
+  .adv__item:nth-child(1)::before {
+    background-image: url("https://gedeon-ekb.ru/templates/gedeon/img/icon1_60.jpg"); }
+  .adv__item:nth-child(2)::before {
+    background-image: url("https://gedeon-ekb.ru/templates/gedeon/img/icon2_60.jpg"); }
+  .adv__item:nth-child(3)::before {
+    background-image: url("https://gedeon-ekb.ru/templates/gedeon/img/icon3_60.jpg"); }
+  .adv__item:nth-child(4)::before {
+    background-image: url("https://gedeon-ekb.ru/templates/gedeon/img/icon4_60.jpg"); }
+  .adv__item:nth-child(5)::before {
+    background-image: url("https://gedeon-ekb.ru/templates/gedeon/img/icon5_60.jpg"); }
+  .adv__item:nth-child(6)::before {
+    background-image: url("https://gedeon-ekb.ru/templates/gedeon/img/icon6_60.jpg"); }
+
+@media (min-width: 768px) {
+  .adv__title {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto; }
+  .adv__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .adv__title::before {
+    left: 150px; }
+  .adv__item {
+    width: 48%; } }
+
+@media (min-width: 1200px) {
+  .adv__item {
+    width: 30%; }
+  .adv__text {
+    text-align: left; } }
+
+.reviews {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f4f4f4; }
+
+.reviews__title {
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  padding-bottom: 60px;
+  position: relative;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto; }
+  .reviews__title::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-image: url("https://gedeon-ekb.ru/assets/img/stars.svg");
+    left: 116px;
+    bottom: 20px;
+    background-size: contain; }
+
+.reviews__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.reviews__item {
+  background-color: #ffffff;
+  padding: 15px;
+  margin-bottom: 30px; }
+
+.reviews__item-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.reviews__item-img-container {
+  position: relative; }
+  .reviews__item-img-container img {
+    border-radius: 50%; }
+  .reviews__item-img-container::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #0fc612;
+    border-radius: 50%;
+    border: 2px solid white;
+    top: 3px;
+    left: 3px; }
+
+.reviews__item-container {
+  padding-bottom: 20px; }
+
+.reviews__item-container-author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 20px;
+  padding-top: 10px; }
+
+.reviews__item-name {
+  padding: 0;
+  margin: 0;
+  font-size: 17px;
+  padding-bottom: 5px; }
+
+.reviews__item-address {
+  font-size: 14px;
+  padding: 0;
+  padding-right: 50px;
+  margin: 0; }
