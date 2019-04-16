@@ -2376,6 +2376,9 @@ li .slider {
     background-image: url("https://gedeon-ekb.ru/templates/gedeon/img/icon6_60.jpg"); }
 
 @media (min-width: 768px) {
+  .adv {
+    padding-top: 60px;
+    padding-bottom: 60px; }
   .adv__title {
     width: 400px;
     margin-left: auto;
@@ -2485,3 +2488,249 @@ li .slider {
   padding: 0;
   padding-right: 50px;
   margin: 0; }
+
+@media (min-width: 768px) {
+  .reviews {
+    padding-top: 60px;
+    padding-bottom: 60px; } }
+
+@media (min-width: 1200px) {
+  .reviews__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .reviews__item {
+    width: 30%; } }
+
+.content {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.content__block-title {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 30px; }
+
+.content__block-text {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 30px; }
+
+.content__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.content__item {
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: contain;
+  width: 300px;
+  height: 133px;
+  position: relative;
+  margin-bottom: 20px;
+  border-radius: 10px; }
+  .content__item:nth-child(1) {
+    background-image: url("https://gedeon-ekb.ru/templates/gedeon/img/fotoprint.jpg"); }
+  .content__item:nth-child(2) {
+    background-image: url("https://gedeon-ekb.ru/templates/gedeon/img/montaj.jpg"); }
+  .content__item:nth-child(3) {
+    background-image: url("https://gedeon-ekb.ru/templates/gedeon/img/catalog-potolkov.jpg"); }
+  .content__item:nth-child(4) {
+    background-image: url("https://gedeon-ekb.ru/templates/gedeon/img/dileram.jpg"); }
+
+.content__item-link {
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%; }
+
+.content__item-container {
+  width: 140px;
+  background-color: #46a5d5;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 7px; }
+
+.content__item-title {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white; }
+
+.content__item-sublink {
+  color: white;
+  position: relative; }
+  .content__item-sublink:before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    -webkit-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+    right: 20px;
+    top: 7px;
+    display: block; }
+  .content__item-sublink::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    border-bottom: 2px solid white;
+    right: 21px;
+    top: 10px;
+    display: block; }
+
+.content__item:hover {
+  opacity: 1;
+  -webkit-transition: all, 0.3s;
+  transition: all, 0.3s; }
+
+.content__item-link:hover {
+  border: 2px solid #337ab7; }
+
+.content__item-link:hover .content__item-sublink {
+  text-decoration: underline;
+  -webkit-transition: all, 0.3s;
+  transition: all, 0.3s; }
+  .content__item-link:hover .content__item-sublink::before {
+    right: 15px;
+    -webkit-transition: top, 0.3s;
+    transition: top, 0.3s; }
+  .content__item-link:hover .content__item-sublink::after {
+    width: 20px;
+    right: 16px;
+    -webkit-transition: all, 0.3s;
+    transition: all, 0.3s; }
+
+@media (min-width: 768px) {
+  .content {
+    padding-top: 60px;
+    padding-bottom: 60px; }
+  .content__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; } }
+
+@media (min-width: 1200px) {
+  .content__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .content__block-title {
+    font-size: 30px; }
+  .content__block-text {
+    font-size: 16px; }
+  .content__block {
+    padding-right: 50px; }
+  .content__item {
+    width: 380px; }
+  .content__item-container {
+    width: 150px; } }
+
+.documents__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.documents__list-item {
+  width: 150px;
+  text-align: center;
+  margin-bottom: 20px; }
+  .documents__list-item--one {
+    width: 300px; }
+  .documents__list-item .documents__item-img {
+    height: auto;
+    width: 100%; }
+
+.documents__block h3 {
+  text-align: center; }
+
+@media (min-width: 768px) {
+  .documents__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .documents__block h3 {
+    padding-bottom: 20px; }
+  .documents__block--doc-list {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    padding-bottom: 30px; }
+  .documents__list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
+
+@media (min-width: 1200px) {
+  .documents__wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .documents__list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 600px; }
+  .documents__list-item {
+    width: 130px; }
+    .documents__list-item--one {
+      -webkit-box-flex: 0;
+          -ms-flex-positive: 0;
+              flex-grow: 0;
+      width: 260px; }
+  .documents__block h3 {
+    text-align: left; }
+  .documents__block--doc-list {
+    width: 40%; } }
